@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - varunkhurana07
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - varunkhurana07/asag-gt
+  - varunkhurana07/face-unmask
+  - varunkhurana07/news-similarity
