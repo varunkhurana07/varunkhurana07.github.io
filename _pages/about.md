@@ -2,16 +2,15 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='https://www.adobe.com/'>Adobe Systems</a>. ML Research Associate. New Delhi, India.
+subtitle: >
+  ML Research Associate 2, <a href='https://www.adobe.com/'>Adobe Systems</a><br>
+  📍 New Delhi, India
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>ML Research Associate</p>
-    <p>Media and Data Science Research Lab, Adobe Systems</p>
-    <p>New Delhi, India</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
