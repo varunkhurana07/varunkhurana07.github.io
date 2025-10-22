@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a ML Research Associate at Adobe Systems, working in the **Media and Data Science Research (MDSR) Lab** on human behavior modeling using large language and vision models (LLMs/VLMs). My research focuses on predicting, optimizing, and explaining human behavior in real-world contexts, particularly at the intersection of multimodal learning and computational social science. At Adobe, I work with [Yaman Kumar Singla](https://sites.google.com/view/yaman-kumar/) and [Balaji Krishnamurthy](https://scholar.google.com/citations?user=n8iUBg8AAAAJ&hl=en).
+I am a ML Research Associate at Adobe Systems, working in the [Media and Data Science Research (MDSR) Lab](https://adobe.mdsr.live/) on human behavior modeling using large language and vision models (LLMs/VLMs). My research focuses on predicting, optimizing, and explaining human behavior in real-world contexts, particularly at the intersection of multimodal learning and computational social science. At Adobe, I work with [Yaman Kumar Singla](https://sites.google.com/view/yaman-kumar/) and [Balaji Krishnamurthy](https://scholar.google.com/citations?user=n8iUBg8AAAAJ&hl=en).
 
 I completed my B.Tech (Hons.) in Computer Science & Engineering with a Minor in Economics from [IIIT Delhi](https://iiitd.ac.in/) in 2023, graduating with a CGPA of 9.49/10.0. During my undergraduate studies, I was consistently recognized on the Dean's List of Academic Excellence for three consecutive years.
 
