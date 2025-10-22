@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined **Adobe Systems** as ML Research Associate 2 in the Media and Data Science Research Lab! 🚀
+Joined **Adobe Systems** full time as ML Research Associate in the Media and Data Science Research Lab! 🚀
