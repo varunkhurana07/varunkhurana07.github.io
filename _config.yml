@@ -9,8 +9,8 @@ last_name: Khurana
 contact_note: >
   Feel free to reach out for research collaborations or discussions about AI and machine learning.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  ML Research Associate at Adobe, working on human behavior modeling using large language and vision models. 
-  Passionate about multimodal learning and computational social science.
+  Varun Khurana - ML Research Associate at Adobe MDSR Lab specializing in human behavior modeling, multimodal learning, and computational social science. 
+  Published at ICLR, NAACL, EACL, WACV. Expert in NLP, computer vision, and AI research. IIIT Delhi alumnus.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
