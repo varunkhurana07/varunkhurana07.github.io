@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Got promoted to Research Associate 2 at Adobe Systems! 🎉
+Got **promoted** to Research Associate 2 at Adobe Systems! 🎉
