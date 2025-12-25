@@ -26,9 +26,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Why does one advertisement go viral while another fails, despite being objectively more 'aesthetically beautiful'? I build AI systems that **predict, optimize, and explain human behavior**, bridging large language models, natural language processing, computer vision and behavioral science to help machines understand not just what people see, but what makes them engage.
+*Why does one advertisement go viral while another fails, despite being objectively more 'aesthetically beautiful'?*
+I build AI systems that **predict, optimize, and explain human behavior**, bridging large language models, natural language processing, computer vision and behavioral science to help machines understand not just what people see, but what makes them engage.
 
-I am a Research Associate (Level 2) at Adobe Systems, working in the [Media and Data Science Research (MDSR) Lab](https://adobe.mdsr.live/) on human behavior modeling using multimodal AI. My research spans three connected thrusts: (i) predicting engagement and attention signals from human interactions with content, (ii) optimizing generative models for behavioral objectives, and (iii) explaining behavioral drivers with interpretable features. At Adobe, I work with [Yaman Kumar Singla](https://sites.google.com/view/yaman-kumar/) and [Balaji Krishnamurthy](https://scholar.google.com/citations?user=n8iUBg8AAAAJ&hl=en).
+I am a Research Associate at Adobe Systems, working in the [Media and Data Science Research (MDSR) Lab](https://adobe.mdsr.live/) on human behavior modeling using multimodal AI. My research spans three connected thrusts: (i) predicting engagement and attention signals from human interactions with content, (ii) optimizing generative models for behavioral objectives, and (iii) explaining behavioral drivers with interpretable features. At Adobe, I work with [Yaman Kumar Singla](https://sites.google.com/view/yaman-kumar/) and [Balaji Krishnamurthy](https://scholar.google.com/citations?user=n8iUBg8AAAAJ&hl=en).
 
 I have published at top-tier conferences including **ICLR, EACL, NAACL, and WACV**, and have filed multiple patents for my work. My work on [EngageNet](https://openreview.net/forum?id=TmCcNuo03f) (ICLR 2025) demonstrates how vision-language models can predict and optimize content for viewer engagement, addressing a critical gap: generative models optimize for aesthetic quality, not audience response.
 
@@ -39,3 +40,11 @@ I completed my B.Tech (Hons.) in Computer Science & Engineering with a Minor in 
 **My long-term vision is to build a foundation world model for behavior that understands how human preferences evolve over time, continuously learns from experience, operates from limited behavioral signals and provides interpretable insights that practitioners can trust.**
 
 ---
+
+### Let's Connect
+
+I am always interested in discussing:
+- **Research collaborations and ideas** at the intersection of machine learning and behavioral science
+- **Opportunities** in AI research labs (academic or industry)
+
+Find me on [Google Scholar](https://scholar.google.com/citations?user=pJXPThwAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/varun-khurana07/) | [Twitter/X](https://twitter.com/varunkhurana07)
