@@ -41,7 +41,7 @@ I completed my B.Tech (Hons.) in Computer Science & Engineering with a Minor in 
 
 ---
 
-### Let's Connect
+##### Let's Connect
 
 I am always interested in discussing:
 - **Research collaborations and ideas** at the intersection of machine learning and behavioral science

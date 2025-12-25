@@ -10,7 +10,7 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 <div class="alert alert-info" role="alert">
-  <strong>Note:</strong> For an up-to-date list of publications and patents filed, please refer to my <a href="https://scholar.google.com/citations?user=pJXPThwAAAAJ" target="_blank" class="alert-link">Google Scholar profile</a>.
+  <strong>Note:</strong> For an up-to-date list of publications and patents, please refer to my <a href="https://scholar.google.com/citations?user=pJXPThwAAAAJ" target="_blank" class="alert-link">Google Scholar profile</a>.
 </div>
 
 <!-- Bibsearch Feature -->
@@ -22,3 +22,14 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+---
+
+## Patents
+
+<div class="publications">
+
+{% bibliography --file patents --template patent %}
+
+</div>
+
