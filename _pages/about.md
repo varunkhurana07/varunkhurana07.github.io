@@ -47,4 +47,4 @@ I am always interested in discussing:
 - **Research collaborations and ideas** at the intersection of machine learning and behavioral science
 - **Opportunities** in AI research labs (academic or industry)
 
-Find me on [Google Scholar](https://scholar.google.com/citations?user=pJXPThwAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/varun-khurana07/) | [Twitter/X](https://twitter.com/varunkhurana07)
+<br>

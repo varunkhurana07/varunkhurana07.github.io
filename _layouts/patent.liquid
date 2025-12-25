@@ -5,6 +5,9 @@
     {%- if entry.abbr -%}
       <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
     {% endif %}
+    {%- if entry.status -%}
+      <abbr class="badge rounded w-100" style="background-color: #6c757d; margin-top: 0.5rem;">{{ entry.status }}</abbr>
+    {% endif %}
   </div>
 
   <!-- Entry bib key -->
@@ -48,7 +51,6 @@
     <div class="periodical">
       <em>{{ entry.note }}</em>
       {% if entry.year %}, {{ entry.year }}{% endif %}
-      {% if entry.status %} ({{ entry.status }}){% endif %}
     </div>
 
     <!-- Links/Buttons -->
