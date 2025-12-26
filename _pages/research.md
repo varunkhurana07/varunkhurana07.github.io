@@ -2,9 +2,9 @@
 layout: page
 permalink: /research/
 title: Research
-description: Building AI systems that predict, optimize, and explain human behavior
+description: Building ML models that predict, optimize and explain human behavior
 nav: true
-nav_order: 3
+nav_order: 2
 ---
 
 ### What is Behavior Modeling?
@@ -85,6 +85,6 @@ My vision is to build behavior models that capture this fluidity:
 ---
 
 <div class="alert alert-info" role="alert">
-  <strong>Interested in collaboration?</strong> I am always interested in discussing research collaborations and ideas at the intersection of machine learning and behavioral science. <a href="/#contact" class="alert-link">Let's connect</a>!
+  I am always interested in discussing research collaborations and ideas at the intersection of machine learning and behavioral science. <a href="/#contact" class="alert-link">Let's connect</a>!
 </div>
 
