@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-*Why does one advertisement go viral while another fails, despite being objectively more 'aesthetically beautiful'?*
+*Why do some news articles go viral while others with identical information don't? Why do people click one recommendation but ignore another, even when both are equally relevant?*
 I build AI systems that **predict, optimize, and explain human behavior**, bridging large language models, natural language processing, computer vision and behavioral science to help machines understand not just what people see, but what makes them engage.
 
 I am a Research Associate at Adobe Systems, working in the [Media and Data Science Research (MDSR) Lab](https://adobe.mdsr.live/) on human behavior modeling using multimodal AI. My research spans three connected thrusts: (i) predicting engagement and attention signals from human interactions with content, (ii) optimizing generative models for behavioral objectives, and (iii) explaining behavioral drivers with interpretable features. At Adobe, I work with [Yaman Kumar Singla](https://sites.google.com/view/yaman-kumar/) and [Balaji Krishnamurthy](https://scholar.google.com/citations?user=n8iUBg8AAAAJ&hl=en).
@@ -37,7 +37,9 @@ I completed my B.Tech (Hons.) in Computer Science & Engineering with a Minor in 
 
 ---
 
-**My long-term vision is to build a foundation world model for behavior that understands how human preferences evolve over time, continuously learns from experience, operates from limited behavioral signals and provides interpretable insights that practitioners can trust.**
+**My long-term vision is to build behavior models that understand how human preferences evolve over time, continuously learn from experience, operate from limited behavioral signals and provide interpretable insights that practitioners can trust.**
+
+*Read more about my [research background and vision](/research/).*
 
 ---
 
