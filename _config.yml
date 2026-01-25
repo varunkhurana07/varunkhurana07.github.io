@@ -14,7 +14,7 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Last updated: December 2025.
-keywords: Varun Khurana, machine learning, computer vision, natural language processing, Adobe research, IIIT Delhi, multimodal learning, behavioral science, computational social science, AI research, academic website # add your own keywords or leave empty
+keywords: Varun Khurana, machine learning, Adobe research, Adobe MDSR, IIIT Delhi, behavioral science, computational social science, computer vision, natural language processing, AI research, academic website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎯 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -208,8 +208,8 @@ plugins:
   # - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll/scholar  # Re-enable for publications
-  # - jekyll-sitemap  # Disabled - using manual sitemap.xml instead
+  - jekyll/scholar  
+  - jekyll-sitemap  
   # - jekyll-tabs
   # - jekyll-terser
   # - jekyll-toc
@@ -222,6 +222,14 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: "_posts"
+    values:
+      sitemap: false  # Exclude al-folio template blog posts from sitemap
+  - scope:
+      path: "_projects"
+    values:
+      sitemap: false  # Exclude sample projects from sitemap
 
 sass:
   style: compressed
