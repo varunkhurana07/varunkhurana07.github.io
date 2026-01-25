@@ -230,6 +230,10 @@ defaults:
       path: "_projects"
     values:
       sitemap: false  # Exclude sample projects from sitemap
+  - scope:
+      path: "_books"
+    values:
+      sitemap: false  # Exclude books from sitemap
 
 sass:
   style: compressed
