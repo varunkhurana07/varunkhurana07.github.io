@@ -209,7 +209,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-regex-replace
   - jekyll/scholar  # Re-enable for publications
-  - jekyll-sitemap
+  # - jekyll-sitemap  # Disabled - using manual sitemap.xml instead
   # - jekyll-tabs
   # - jekyll-terser
   # - jekyll-toc

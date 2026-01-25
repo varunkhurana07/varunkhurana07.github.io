@@ -38,7 +38,7 @@ My research focuses on three interconnected thrusts:
 **ScanTextGAN** (EACL 2023) — [Paper](https://aclanthology.org/2023.eacl-main.139/) • [Video](https://aclanthology.org/2023.eacl-main.139.mp4)
 - <u>Problem</u>: Eye-tracking data is expensive and privacy-invasive
 - <u>Solution</u>: First model to synthesize realistic human reading patterns over text
-- <u>Impact</u>: Synthetic scanpaths approximate cognitive signals that improved NLP performance across 6 datasets spanning 4 tasks
+- <u>Impact</u>: Synthetic scanpaths approximate cognitive signals that improved NLU performance across 6 datasets spanning 4 tasks
 
 ---
 
