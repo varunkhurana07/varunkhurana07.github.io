@@ -15,9 +15,13 @@ nav_order: 2
 
 ---
 
-### What is Behavior Modeling?
+### Why Behavior Modeling?
+
+<div class="research-questions" markdown="1">
 
 *Why do some news articles go viral while others with identical information don't? Why do people click one recommendation but ignore another, even when both are equally relevant? Why does the same message persuade some people but backfire with others?*
+
+</div>
 
 Traditional ML models optimize only for technical correctness: more accurate predictions, sharper images, better perplexity scores. However, real-world success also depends on human responses. **Behavior modeling** shifts the focus from system performance to human reactions. Instead of asking "Is this output correct?", we ask "Will people engage with it? What drives their choices? How do their preferences evolve?"
 
