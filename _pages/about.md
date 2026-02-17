@@ -9,24 +9,29 @@ subtitle: >
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true
   more_info: >
+    <div class="typewriter-container">
+      <span class="typewriter-text" id="typewriter"></span><span class="typewriter-cursor">|</span>
+    </div>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 4 # show 4 items with scroll for the rest
+  enabled: true
+  scrollable: true
+  limit: 4
 
 latest_posts:
-  enabled: false # disable blog posts for now
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: true
+  limit: 3
 ---
 
-*Why do some news articles go viral while others with identical information don't? Why do people click one recommendation but ignore another, even when both are equally relevant?*
+<div class="research-hook">
+<p>Why do some news articles go viral while others with identical information don't? Why do people click one recommendation but ignore another, even when both are equally relevant?</p>
+</div>
 
 I build models that **predict, optimize and explain human behavior**, bridging large language models, natural language processing, computer vision and behavioral science to help machines understand not just what people see, but what makes them engage.
 
@@ -42,10 +47,63 @@ I completed my B.Tech (Hons.) in Computer Science & Engineering with a Minor in 
 
 ---
 
+<div class="connect-cta">
+
 ##### Let's Connect
 
 I am always interested in discussing:
 - **Research collaborations and ideas** at the intersection of machine learning and behavioral science
 - **Opportunities** in AI research labs (academic or industry)
 
+</div>
+
 <br>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const phrases = ['Hello!', 'नमस्ते!'];
+  const el = document.getElementById('typewriter');
+  if (!el) return;
+
+  let phraseIdx = 0;
+  let charIdx = 0;
+  let isDeleting = false;
+  let pauseTime = 0;
+
+  const TYPE_SPEED = 90;
+  const DELETE_SPEED = 55;
+  const PAUSE_AFTER_TYPE = 2200;
+  const PAUSE_AFTER_DELETE = 400;
+
+  function tick() {
+    const current = phrases[phraseIdx];
+
+    if (!isDeleting) {
+      el.textContent = current.substring(0, charIdx + 1);
+      charIdx++;
+
+      if (charIdx === current.length) {
+        isDeleting = true;
+        pauseTime = PAUSE_AFTER_TYPE;
+      } else {
+        pauseTime = TYPE_SPEED;
+      }
+    } else {
+      el.textContent = current.substring(0, charIdx - 1);
+      charIdx--;
+
+      if (charIdx === 0) {
+        isDeleting = false;
+        phraseIdx = (phraseIdx + 1) % phrases.length;
+        pauseTime = PAUSE_AFTER_DELETE;
+      } else {
+        pauseTime = DELETE_SPEED;
+      }
+    }
+
+    setTimeout(tick, pauseTime);
+  }
+
+  setTimeout(tick, 600);
+});
+</script>
