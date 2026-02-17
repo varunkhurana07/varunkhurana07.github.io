@@ -75,8 +75,8 @@ button {
 
 .typewriter-text {
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1.35rem;
   color: var(--global-theme-color);
   letter-spacing: 0.01em;
 }
@@ -84,7 +84,7 @@ button {
 .typewriter-cursor {
   display: inline-block;
   width: 2px;
-  height: 1.2em;
+  height: 1.4em;
   background-color: var(--global-theme-color);
   margin-left: 2px;
   vertical-align: text-bottom;
@@ -97,36 +97,43 @@ button {
 }
 
 // =============================================================================
-// 4. HERO HOOK (Opening question on About page)
+// 4. CUSTOM ALERT (replaces Bootstrap alert-info for palette consistency)
 // =============================================================================
 
-.research-hook {
-  border-left: 4px solid var(--global-theme-color);
+.custom-alert {
   background: linear-gradient(
     135deg,
-    rgba(74, 63, 138, 0.04) 0%,
-    rgba(74, 63, 138, 0.01) 100%
+    rgba(74, 63, 138, 0.06) 0%,
+    rgba(74, 63, 138, 0.02) 100%
   );
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.25rem;
-  border-radius: 0 6px 6px 0;
+  border: 1px solid rgba(74, 63, 138, 0.12);
+  border-radius: 8px;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: var(--global-text-color);
 
-  p {
-    font-size: 1.05rem;
-    line-height: 1.65;
-    margin-bottom: 0;
-    font-style: italic;
-    color: var(--global-text-color);
-    opacity: 0.85;
+  a {
+    color: var(--global-theme-color);
+    font-weight: 500;
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+
+  strong {
+    color: var(--global-theme-color);
   }
 }
 
-html[data-theme="dark"] .research-hook {
+html[data-theme="dark"] .custom-alert {
   background: linear-gradient(
     135deg,
-    rgba(155, 142, 196, 0.08) 0%,
-    rgba(155, 142, 196, 0.02) 100%
+    rgba(155, 142, 196, 0.1) 0%,
+    rgba(155, 142, 196, 0.03) 100%
   );
+  border-color: rgba(155, 142, 196, 0.18);
 }
 
 // =============================================================================
@@ -413,37 +420,37 @@ a {
 
 .shloka-epigraph {
   text-align: center;
-  padding: 2rem 1.5rem;
-  margin-bottom: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
   background: linear-gradient(
     135deg,
     rgba(74, 63, 138, 0.04) 0%,
     rgba(74, 63, 138, 0.01) 100%
   );
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid rgba(74, 63, 138, 0.06);
 
   .shloka-devanagari {
     font-family: 'Noto Serif Devanagari', 'Georgia', serif;
-    font-size: 1.6rem;
+    font-size: 1.35rem;
     font-weight: 700;
     color: var(--global-theme-color);
-    letter-spacing: 0.05em;
-    margin-bottom: 0.5rem;
-    line-height: 1.8;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.3rem;
+    line-height: 1.6;
   }
 
   .shloka-translation {
     font-family: 'Inter', sans-serif;
     font-style: italic;
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     color: var(--global-text-color-light);
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
   }
 
   .shloka-source {
     font-family: 'Inter', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--global-text-color-light);
     opacity: 0.7;
     margin-bottom: 0;
@@ -514,26 +521,7 @@ html[data-theme="dark"] .research-project {
   }
 }
 
-.vision-section {
-  border-left: 4px solid var(--global-theme-color);
-  padding: 1rem 1.25rem;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(
-    135deg,
-    rgba(74, 63, 138, 0.03) 0%,
-    rgba(74, 63, 138, 0.01) 100%
-  );
-  border-radius: 0 6px 6px 0;
-}
-
-html[data-theme="dark"] .vision-section {
-  background: linear-gradient(
-    135deg,
-    rgba(155, 142, 196, 0.06) 0%,
-    rgba(155, 142, 196, 0.02) 100%
-  );
-}
+// (vision-section removed per user request)
 
 // =============================================================================
 // 15. SCROLL FADE-IN ANIMATION
@@ -572,6 +560,10 @@ html[data-theme="dark"] .vision-section {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(74, 63, 138, 0.1);
+    --swiper-navigation-size: 32px;
+    --swiper-navigation-sides-offset: 12px;
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-horizontal-gap: 5px;
   }
 
   swiper-slide {
@@ -624,19 +616,15 @@ html[data-theme="dark"] .news-carousel-section {
 // =============================================================================
 
 @media (max-width: 575px) {
-  .research-hook {
-    padding: 0.75rem 1rem;
-  }
-
   .connect-cta {
     padding: 1rem 1.25rem;
   }
 
   .shloka-epigraph {
-    padding: 1.5rem 1rem;
+    padding: 1rem 0.75rem;
 
     .shloka-devanagari {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
     }
   }
 

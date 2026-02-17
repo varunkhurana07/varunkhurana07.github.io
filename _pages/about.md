@@ -29,10 +29,6 @@ latest_posts:
   limit: 3
 ---
 
-<div class="research-hook">
-<p>Why do some news articles go viral while others with identical information don't? Why do people click one recommendation but ignore another, even when both are equally relevant?</p>
-</div>
-
 I build models that **predict, optimize and explain human behavior**, bridging large language models, natural language processing, computer vision and behavioral science to help machines understand not just what people see, but what makes them engage.
 
 I am a Research Associate at Adobe Systems, working in the [Media and Data Science Research (MDSR) Lab](https://adobe.mdsr.live/) with [Yaman Kumar Singla](https://sites.google.com/view/yaman-kumar/) and [Balaji Krishnamurthy](https://scholar.google.com/citations?user=n8iUBg8AAAAJ&hl=en). My research spans three connected thrusts: (i) predicting engagement and attention signals from human interactions with content, (ii) optimizing generative models for behavioral objectives, and (iii) explaining behavioral drivers with interpretable features. I have published at top-tier conferences including **ICLR, EACL, NAACL and WACV**, and have filed multiple patents for my work.
@@ -47,7 +43,7 @@ I completed my B.Tech (Hons.) in Computer Science & Engineering with a Minor in 
 
 ---
 
-<div class="connect-cta">
+<div class="connect-cta" markdown="1">
 
 ##### Let's Connect
 
@@ -72,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const TYPE_SPEED = 90;
   const DELETE_SPEED = 55;
-  const PAUSE_AFTER_TYPE = 2200;
+  const PAUSE_AFTER_TYPE = 1000;
   const PAUSE_AFTER_DELETE = 400;
 
   function tick() {

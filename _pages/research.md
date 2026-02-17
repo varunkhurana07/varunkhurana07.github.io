@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 <div class="shloka-epigraph">
-  <p class="shloka-devanagari">तमसो मा ज्योतिर्गमय</p>
+  <p class="shloka-devanagari">तमसो मा ज्योतिर्गमय ।</p>
   <p class="shloka-translation">"Lead me from darkness to light"</p>
   <p class="shloka-source">— Brihadaranyaka Upanishad (1.3.28)</p>
 </div>
@@ -17,7 +17,7 @@ nav_order: 2
 
 ### What is Behavior Modeling?
 
-Why do some news articles go viral while others with identical information don't? Why do people click one recommendation but ignore another, even when both are equally relevant? Why does the same message persuade some people but backfire with others?
+*Why do some news articles go viral while others with identical information don't? Why do people click one recommendation but ignore another, even when both are equally relevant? Why does the same message persuade some people but backfire with others?*
 
 Traditional ML models optimize only for technical correctness: more accurate predictions, sharper images, better perplexity scores. However, real-world success also depends on human responses. **Behavior modeling** shifts the focus from system performance to human reactions. Instead of asking "Is this output correct?", we ask "Will people engage with it? What drives their choices? How do their preferences evolve?"
 
@@ -32,13 +32,13 @@ My research focuses on three interconnected thrusts:
 - **Optimize** generative models for behavioral objectives, not just perceptual quality
 - **Explain** behavioral drivers with interpretable features that practitioners can trust
 
-<div class="research-pillar-card">
+<div class="research-pillar-card" markdown="1">
 
 #### 🎯 Predict: Modeling Cognitive Signals and Engagement
 
 *Core Question: Can we predict how humans attend to and engage with content?*
 
-<div class="research-project">
+<div class="research-project" markdown="1">
 
 **EngageNet** (ICLR 2025) — [Paper](https://openreview.net/forum?id=TmCcNuo03f)
 - <u>Problem</u>: Traditional image quality metrics fail to predict viewer engagement (Pearson r < 0.1)
@@ -47,7 +47,7 @@ My research focuses on three interconnected thrusts:
 
 </div>
 
-<div class="research-project">
+<div class="research-project" markdown="1">
 
 **ScanTextGAN** (EACL 2023) — [Paper](https://aclanthology.org/2023.eacl-main.139/) • [Video](https://aclanthology.org/2023.eacl-main.139.mp4)
 - <u>Problem</u>: Eye-tracking data is expensive and privacy-invasive
@@ -60,13 +60,13 @@ My research focuses on three interconnected thrusts:
 
 ---
 
-<div class="research-pillar-card">
+<div class="research-pillar-card" markdown="1">
 
 #### ⚙️ Optimize: Aligning Generative Models with Behavior
 
 *Core Question: Can we steer text-to-image models to optimize for human preferences, not just perceptual quality?*
 
-<div class="research-project">
+<div class="research-project" markdown="1">
 
 **Engagement-Optimized Image Generation (EOIG)** (ICLR 2025) — [Paper](https://openreview.net/forum?id=TmCcNuo03f)
 - <u>Problem</u>: Diffusion models generate beautiful images that don't engage audiences
@@ -75,7 +75,7 @@ My research focuses on three interconnected thrusts:
 
 </div>
 
-<div class="research-project">
+<div class="research-project" markdown="1">
 
 **BrandFusion** (WACV 2026) — [Website](https://behavior-in-the-wild.github.io/brandfusion.html)
 - <u>Problem</u>: Text-to-image models struggle to capture nuanced brand styles (lighting, color palettes, composition)
@@ -88,13 +88,13 @@ My research focuses on three interconnected thrusts:
 
 ---
 
-<div class="research-pillar-card">
+<div class="research-pillar-card" markdown="1">
 
 #### 🔍 Explain: Interpretable Behavior Modeling
 
 *Core Question: Why does content engage viewers? Can we extract human-readable rules?*
 
-<div class="research-project">
+<div class="research-project" markdown="1">
 
 **FEST** (Preprint 2025)
 - <u>Problem</u>: Black-box optimization leaves practitioners unable to understand or control outcomes
@@ -109,8 +109,6 @@ My research focuses on three interconnected thrusts:
 
 ### Vision
 
-<div class="vision-section">
-
 Current behavior models treat preferences as fixed snapshots. However, human behavior is messy, dynamic and social. What engages you today might bore you tomorrow. Fashion trends emerge from nowhere and spread through networks. A product recommendation gains credibility when your friends engage with it.
 
 My vision is to build behavior models that capture this fluidity:
@@ -118,10 +116,10 @@ My vision is to build behavior models that capture this fluidity:
 - Models that continuously learn behavioral patterns from experience rather than relying on massive labeled datasets
 - Models that capture how people influence each other and how collective behavior emerges from individual choices
 
-</div>
-
 ---
 
-<div class="alert alert-info" role="alert">
-  I am always interested in discussing research collaborations and ideas at the intersection of machine learning and behavioral science. <a href="/#contact" class="alert-link">Let's connect</a>!
+<div class="custom-alert" markdown="1">
+
+I am always interested in discussing research collaborations and ideas at the intersection of machine learning and behavioral science. [Let's connect](/#contact)!
+
 </div>
