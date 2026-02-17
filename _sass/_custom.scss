@@ -36,6 +36,10 @@ button {
 // 2. PROFILE SECTION
 // =============================================================================
 
+.profile.float-right {
+  margin-left: 1.5rem;
+}
+
 .profile {
   img.rounded-circle {
     border: 3px solid var(--global-theme-color);
@@ -164,6 +168,21 @@ html[data-theme="dark"] .research-questions {
     rgba(155, 142, 196, 0.12) 0%,
     rgba(155, 142, 196, 0.04) 100%
   );
+}
+
+// =============================================================================
+// 4c. JUSTIFIED TEXT FOR ABOUT PAGE
+// =============================================================================
+
+.post > article > .clearfix {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+
+  strong, a {
+    hyphens: none;
+    -webkit-hyphens: none;
+  }
 }
 
 // =============================================================================
