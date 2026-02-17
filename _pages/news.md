@@ -2,6 +2,7 @@
 layout: page
 title: News
 permalink: /news/
+description: Updates on publications, presentations, awards and milestones.
 nav: true
 nav_order: 4
 images:
