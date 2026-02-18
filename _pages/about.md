@@ -39,7 +39,7 @@ I completed my B.Tech (Hons.) in Computer Science & Engineering with a Minor in 
 
 **My long-term vision is to build behavior models that understand how human preferences evolve over time, continuously learn from experience, operate from limited behavioral signals and provide interpretable insights that practitioners can trust.**
 
-*Read more about my [research background and vision](/research/).*
+*Read more about my **[research background and vision](/research/)**.*
 
 ---
 
