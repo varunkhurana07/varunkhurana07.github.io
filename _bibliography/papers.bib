@@ -6,6 +6,21 @@
 @string{naacl = {North American Chapter of the Association for Computational Linguistics: Human Language Technologies}}
 @string{wacv = {Winter Conference on Applications of Computer Vision}}
 
+@misc{khurana2026fest,
+  title={Bridging Expert Knowledge and Automated Feature Engineering via Self-Evolution},
+  author={Khurana, Varun and Ekbote, Vijval and Chauhan, Vashu and Singla, Yaman Kumar and Shah, Rajiv Ratn and Krishnamurthy, Balaji},
+  year={2026},
+  eprint={2606.08800},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  abbr={Preprint 2026},
+  bibtex_show={true},
+  html={https://arxiv.org/abs/2606.08800},
+  selected={true},
+  preview={khurana2026fest.png},
+  abstract={In high-stakes settings such as brand compliance, clinical care, and content moderation, machine learning cannot be deployed as opaque oracles: practitioners inspect the features driving model decisions, and models must leverage the expert documentation governing these domains. In practice, the data arrives as unstructured content, and features extracted from it must be interpretable, discriminative, and aligned with what experts consider important. Existing methods fall short: they target tabular inputs, lack demonstrated expert alignment, and cannot operationalize qualitative criteria such as 'maintain professional tone' into precise features. We present FEST (Feature Engineering with Self-evolving Trees), combining dual-stream feature generation (semantic and deterministic), semantic deduplication, and tree-guided iterative evolution to discover auditable features from raw text and images. FEST leads in 17 of 20 classifier-task combinations across brand classification, content authenticity detection, and stress detection, with a mean gain of 4.2 pp over the strongest baseline across five classifiers. An LLM-as-judge evaluation shows FEST achieves 60-80% coverage of expert-designed brand features at strict semantic-alignment thresholds, corroborated by a human expert study rating features highly on relevance, clarity, and actionability. When seeded with expert guidelines, FEST refines qualitative criteria into operational features, improving accuracy by 6-12 pp on average across brands. To enable systematic evaluation of expert alignment in automated feature engineering, we release BrandGuide, the first dataset pairing expert-designed features with 1M+ assets across 2,683 brands. By grounding feature engineering in expert knowledge, FEST opens a practical pathway for interpretable ML in domains demanding human oversight.}
+}
+
 @inproceedings{gupta2026brandfusion,
   title={BrandFusion: Aligning Image Generation with Brand Styles},
   author={Gupta, Parul and Khurana, Varun and Singla, Yaman Kumar and Krishnamurthy, Balaji and Dhall, Abhinav},
