@@ -225,20 +225,33 @@
 
   <script type="application/ld+json">
     {
+        "@context": "https://schema.org",
+        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
+        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+        "name": "{{ author_name }}",
+        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
         "author":
         {
             "@type": "Person",
-            "name": "{{ author_name }}"
-        },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks | jsonify }},
-        {% endif %}
-        "name": "{{ author_name }}",
-        "@context": "https://schema.org"
+            "name": "{{ author_name }}",
+            "url": "{{ site.url }}{{ site.baseurl }}",
+            "jobTitle": "Research Associate",
+            "worksFor":
+            {
+                "@type": "Organization",
+                "name": "Adobe"
+            },
+            "alumniOf":
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Indraprastha Institute of Information Technology, Delhi (IIIT Delhi)"
+            },
+            {% if sameaslinks != blank %}
+            "sameAs": {{ sameaslinks | jsonify }},
+            {% endif %}
+            "knowsAbout": ["Machine Learning", "Computer Vision", "Natural Language Processing", "Computational Behavioral Science", "Human-Centered AI", "Interpretable Machine Learning"]
+        }
     }
   </script>
 {% endif %}

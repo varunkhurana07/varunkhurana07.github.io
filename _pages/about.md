@@ -33,9 +33,9 @@ latest_posts:
 I build AI for the part most benchmarks miss: how people read, react and decide.
 </div>
 
-I am a researcher at Adobe's [Media and Data Science Research (MDSR) Lab](https://adobe.mdsr.live/). My work bridges computer vision, natural language processing, and computational behavioral science to build AI systems that are not only technically strong, but useful to the people they affect.
+I am a researcher at Adobe's [Media and Data Science Research (MDSR) Lab](https://adobe.mdsr.live/). My work bridges computer vision, natural language processing, and computational behavioral science to build technically robust AI systems grounded in human behavior.
 
-My research leverages human behavioral signals for three connected objectives: to **predict** how people respond to digital content, **optimize** models for human-centered goals, and **explain** the patterns driving their decisions. In practice, this work has taken me from synthetic reading signals for language models to engagement-aware image generation, brand-aligned content creation, and expert-guided feature engineering.
+To achieve this, my research pursues three connected objectives: to **predict** how people respond to digital content, **optimize** models for human-centered goals, and **explain** the patterns driving their decisions. In practice, this work has taken me from synthetic reading signals for language models to engagement-aware image generation, brand-aligned content creation, and expert-guided feature engineering.
 
 Earlier, I earned my B.Tech (Hons.) degree in Computer Science and Engineering with a Minor in Economics from [IIIT Delhi](https://iiitd.ac.in/), where I was recognized on the Dean's List of Academic Excellence for three consecutive years. I completed my Bachelor's thesis on multimodal advertisement understanding with [Prof. Rajiv Ratn Shah](https://midas.iiitd.ac.in/) at MIDAS Lab, and built graph-based models for automatic grading with [Prof. Mukesh Mohania](https://scholar.google.com/citations?user=zgaqvNQAAAAJ&hl=en).
 
@@ -51,15 +51,13 @@ My long-term goal is to build behavior models that understand how human preferen
 
 <div class="connect-cta" markdown="1">
 
-#### Let's Connect
+##### Let's Connect
 
 I am always interested in discussing:
 - **Research collaborations and ideas** at the intersection of machine learning and behavioral science
 - **Opportunities** in AI research labs (academic or industry)
 
 </div>
-
-<br>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
