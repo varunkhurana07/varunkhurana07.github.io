@@ -511,8 +511,8 @@ a {
   margin-bottom: 1rem;
   background: linear-gradient(
     135deg,
-    rgba(74, 63, 138, 0.04) 0%,
-    rgba(74, 63, 138, 0.01) 100%
+    rgba(74, 63, 138, 0.08) 0%,
+    rgba(74, 63, 138, 0.03) 100%
   );
   border-radius: 8px;
   border: 1px solid rgba(74, 63, 138, 0.06);
@@ -531,15 +531,14 @@ a {
     font-family: 'Inter', sans-serif;
     font-style: italic;
     font-size: 0.88rem;
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
     margin-bottom: 0.15rem;
   }
 
   .shloka-source {
     font-family: 'Inter', sans-serif;
     font-size: 0.75rem;
-    color: var(--global-text-color-light);
-    opacity: 0.7;
+    color: var(--global-text-color);
     margin-bottom: 0;
   }
 }
@@ -547,8 +546,8 @@ a {
 html[data-theme="dark"] .shloka-epigraph {
   background: linear-gradient(
     135deg,
-    rgba(155, 142, 196, 0.08) 0%,
-    rgba(155, 142, 196, 0.02) 100%
+    rgba(155, 142, 196, 0.12) 0%,
+    rgba(155, 142, 196, 0.04) 100%
   );
   border-color: rgba(155, 142, 196, 0.1);
 }
@@ -609,7 +608,8 @@ html[data-theme="dark"] .research-project {
 }
 
 // Venue badge pill on research project titles
-.badge {
+// (named .proj-badge to avoid colliding with Bootstrap's .badge)
+.proj-badge {
   display: inline-block;
   font-size: 0.72rem;
   font-weight: 600;
@@ -619,15 +619,16 @@ html[data-theme="dark"] .research-project {
   letter-spacing: 0.01em;
   white-space: nowrap;
   vertical-align: middle;
+  box-shadow: none;
 }
 
-.badge-venue {
+.proj-badge-venue {
   background: rgba(74, 63, 138, 0.08);
   color: var(--global-theme-color);
   border: 1px solid rgba(74, 63, 138, 0.22);
 }
 
-html[data-theme="dark"] .badge-venue {
+html[data-theme="dark"] .proj-badge-venue {
   background: rgba(155, 142, 196, 0.12);
   color: var(--global-theme-color);
   border-color: rgba(155, 142, 196, 0.3);
