@@ -96,14 +96,14 @@ My research focuses on three interconnected thrusts:
 
 #### 🔍 Explain: Interpretable Behavior Modeling
 
-*Core Question: Why does content engage viewers? Can we extract human-readable rules?*
+*Core Question: Can models explain their decisions through features that domain experts recognize and trust?*
 
 <div class="research-project" markdown="1">
 
-**FEST** (Preprint 2025)
-- <u>Problem</u>: Black-box optimization leaves practitioners unable to understand or control outcomes
-- <u>Solution</u>: Self-evolving decision trees that extract interpretable features from raw data (text, images) and refine them as new evidence arrives
-- <u>Impact</u>: Human-readable rules (e.g., "images with dark lighting + minimalistic design drive 2x engagement for brand X") with competitive predictive performance
+**FEST** (Preprint 2026) — [Paper](https://arxiv.org/abs/2606.08800) • [Project](https://behavior-in-the-wild.github.io/fest.html) • [Dataset](https://huggingface.co/datasets/brand-genome/brand-guidelines-pdfs)
+- <u>Problem</u>: In high-stakes settings like brand compliance, clinical care and content moderation, practitioners cannot deploy models whose features they are unable to inspect or check against expert documentation
+- <u>Solution</u>: Self-evolving decision trees that discover interpretable features from raw text and images, and turn qualitative expert guidelines (e.g., "maintain a professional tone") into precise, measurable features
+- <u>Impact</u>: Leads in 17 of 20 classifier-task combinations (mean +4.2 pp) and covers 60-80% of expert-designed features; accuracy improves a further 6-12 pp when seeded with expert guidelines. Ships BrandGuide, a dataset of 1M+ assets across 2,683 brands
 
 </div>
 

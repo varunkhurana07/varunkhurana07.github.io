@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 subtitle: >
-  ML Research Associate 2, <a href='https://www.adobe.com/'>Adobe Systems</a><br>
+  ML Research Associate, <a href='https://adobe.mdsr.live/'>Adobe MDSR Lab</a><br>
   📍 New Delhi, India
 
 profile:
