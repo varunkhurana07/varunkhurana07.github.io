@@ -37,19 +37,21 @@ I am a researcher at Adobe's [Media and Data Science Research (MDSR) Lab](https:
 
 My research leverages human behavioral signals for three connected objectives: to **predict** how people respond to digital content, **optimize** models for human-centered goals, and **explain** the patterns driving their decisions. In practice, this work has taken me from synthetic reading signals for language models to engagement-aware image generation, brand-aligned content creation, and expert-guided feature engineering.
 
----
-
-My long-term vision is to build behavior models that understand how human preferences evolve over time, continuously learn from experience, operate from limited behavioral signals and provide interpretable insights that practitioners can trust.
-
-Read more about my **[research background and vision](/research/)**.
-
 Earlier, I earned my B.Tech (Hons.) degree in Computer Science and Engineering with a Minor in Economics from [IIIT Delhi](https://iiitd.ac.in/), where I was recognized on the Dean's List of Academic Excellence for three consecutive years. I completed my Bachelor's thesis on multimodal advertisement understanding with [Prof. Rajiv Ratn Shah](https://midas.iiitd.ac.in/) at MIDAS Lab, and built graph-based models for automatic grading with [Prof. Mukesh Mohania](https://scholar.google.com/citations?user=zgaqvNQAAAAJ&hl=en).
+
+<div class="research-questions" markdown="1">
+
+My long-term goal is to build behavior models that understand how human preferences evolve over time, continuously learn from experience, operate from limited behavioral signals, and provide interpretable insights that practitioners can trust.
+
+[Read more about my research and vision →](/research/){:.read-more}
+
+</div>
 
 ---
 
 <div class="connect-cta" markdown="1">
 
-##### Let's Connect
+#### Let's Connect
 
 I am always interested in discussing:
 - **Research collaborations and ideas** at the intersection of machine learning and behavioral science

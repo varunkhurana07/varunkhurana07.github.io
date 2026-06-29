@@ -73,11 +73,12 @@ button {
 // =============================================================================
 
 .hero-hook {
-  font-family: 'Playfair Display', 'Georgia', serif;
-  font-size: 1.85rem;
-  line-height: 1.3;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
   font-weight: 600;
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
+  text-align: left;
   margin: 0.25rem 0 1.5rem;
 
   p {
@@ -87,13 +88,13 @@ button {
 
 @media (max-width: 768px) {
   .hero-hook {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 575px) {
   .hero-hook {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -200,17 +201,28 @@ html[data-theme="dark"] .research-questions {
 }
 
 // =============================================================================
-// 4c. JUSTIFIED TEXT FOR ABOUT PAGE
+// 4c. ABOUT PAGE BODY TEXT (justified, no word-splitting)
 // =============================================================================
 
 .post > article > .clearfix {
   text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  hyphens: none;
+  -webkit-hyphens: none;
+}
 
-  strong, a {
-    hyphens: none;
-    -webkit-hyphens: none;
+// =============================================================================
+// 4d. READ-MORE LINK INSIDE CALLOUT (homepage vision)
+// =============================================================================
+
+.research-questions .read-more {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--global-theme-color);
+
+  &:hover {
+    color: var(--global-hover-color);
   }
 }
 
@@ -382,14 +394,6 @@ html[data-theme="dark"] .publications ol.bibliography li {
 // =============================================================================
 
 .connect-cta {
-  background: linear-gradient(
-    135deg,
-    rgba(74, 63, 138, 0.05) 0%,
-    rgba(74, 63, 138, 0.02) 100%
-  );
-  border: 1px solid rgba(74, 63, 138, 0.1);
-  border-radius: 10px;
-  padding: 1rem 1.5rem;
   margin-top: 1rem;
 
   h5 {
@@ -418,15 +422,6 @@ html[data-theme="dark"] .publications ol.bibliography li {
       }
     }
   }
-}
-
-html[data-theme="dark"] .connect-cta {
-  background: linear-gradient(
-    135deg,
-    rgba(155, 142, 196, 0.08) 0%,
-    rgba(155, 142, 196, 0.03) 100%
-  );
-  border-color: rgba(155, 142, 196, 0.15);
 }
 
 // =============================================================================
@@ -708,10 +703,6 @@ html[data-theme="dark"] .news-carousel-section {
 // =============================================================================
 
 @media (max-width: 575px) {
-  .connect-cta {
-    padding: 1rem 1.25rem;
-  }
-
   .shloka-epigraph {
     padding: 1rem 0.75rem;
 
