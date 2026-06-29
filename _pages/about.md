@@ -29,17 +29,21 @@ latest_posts:
   limit: 3
 ---
 
-I build models that **predict, optimize and explain human behavior**, bridging large language models, natural language processing, computer vision and behavioral science to help machines understand not just what people see, but what makes them engage.
+<div class="hero-hook" markdown="1">
+I build AI for the part most benchmarks miss: how people read, react and decide.
+</div>
 
-I am a Research Associate at Adobe Systems, working in the [Media and Data Science Research (MDSR) Lab](https://adobe.mdsr.live/) with [Yaman Kumar Singla](https://sites.google.com/view/yaman-kumar/) and [Balaji Krishnamurthy](https://scholar.google.com/citations?user=n8iUBg8AAAAJ&hl=en). My research spans three connected thrusts: (i) predicting engagement and attention signals from human interactions with content, (ii) optimizing generative models for behavioral objectives, and (iii) explaining behavioral drivers with interpretable features. I have published at top-tier conferences including **ICLR, EACL, NAACL and WACV**, and have filed multiple patents for my work.
+I am a researcher at Adobe's [Media and Data Science Research (MDSR) Lab](https://adobe.mdsr.live/). My work bridges computer vision, natural language processing, and computational behavioral science to build AI systems that are not only technically strong, but useful to the people they affect.
 
-I completed my B.Tech (Hons.) in Computer Science & Engineering with a Minor in Economics from [IIIT Delhi](https://iiitd.ac.in/) in 2023, where I was consistently recognized on the **Dean's List of Academic Excellence for three consecutive years**. During my undergraduate studies, I completed my Bachelor's thesis on multimodal advertisement understanding advised by [Prof. Rajiv Ratn Shah](https://midas.iiitd.ac.in/) at MIDAS Lab, and developed graph-based models for automatic grading with [Prof. Mukesh Mohania](https://scholar.google.com/citations?user=zgaqvNQAAAAJ&hl=en).
+My research leverages human behavioral signals for three connected objectives: to **predict** how people respond to digital content, **optimize** models for human-centered goals, and **explain** the patterns driving their decisions. In practice, this work has taken me from synthetic reading signals for language models to engagement-aware image generation, brand-aligned content creation, and expert-guided feature engineering.
 
 ---
 
-**My long-term vision is to build behavior models that understand how human preferences evolve over time, continuously learn from experience, operate from limited behavioral signals and provide interpretable insights that practitioners can trust.**
+My long-term vision is to build behavior models that understand how human preferences evolve over time, continuously learn from experience, operate from limited behavioral signals and provide interpretable insights that practitioners can trust.
 
 Read more about my **[research background and vision](/research/)**.
+
+Earlier, I earned my B.Tech (Hons.) degree in Computer Science and Engineering with a Minor in Economics from [IIIT Delhi](https://iiitd.ac.in/), where I was recognized on the Dean's List of Academic Excellence for three consecutive years. I completed my Bachelor's thesis on multimodal advertisement understanding with [Prof. Rajiv Ratn Shah](https://midas.iiitd.ac.in/) at MIDAS Lab, and built graph-based models for automatic grading with [Prof. Mukesh Mohania](https://scholar.google.com/citations?user=zgaqvNQAAAAJ&hl=en).
 
 ---
 

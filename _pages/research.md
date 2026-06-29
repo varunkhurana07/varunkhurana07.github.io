@@ -81,10 +81,10 @@ My research focuses on three interconnected thrusts:
 
 <div class="research-project" markdown="1">
 
-**BrandFusion** (WACV 2026) — [Website](https://behavior-in-the-wild.github.io/brandfusion.html)
+**BrandFusion** (WACV 2026) — [Paper](https://openaccess.thecvf.com/content/WACV2026/html/Gupta_BrandFusion_Aligning_Image_Generation_with_Brand_Styles_WACV_2026_paper.html) • [Project](https://behavior-in-the-wild.github.io/brandfusion.html)
 - <u>Problem</u>: Text-to-image models struggle to capture nuanced brand styles (lighting, color palettes, composition)
 - <u>Solution</u>: Decoupled framework: Brand-aware VLM predicts style characteristics → Brand-aware Diffusion Model generates aligned images
-- <u>Impact</u>: 66.11% human preference rate; generalizes to unseen brands via sector-level patterns
+- <u>Impact</u>: 68.61% human preference rate; generalizes to unseen brands via sector-level patterns
 
 </div>
 
