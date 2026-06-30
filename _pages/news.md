@@ -4,7 +4,7 @@ title: News
 permalink: /news/
 description: Updates on publications, presentations, awards and milestones.
 nav: true
-nav_order: 4
+nav_order: 5
 images:
   slider: true
 ---

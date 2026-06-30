@@ -81,6 +81,10 @@ layout: default
     </div>
   {% endif %}
 
+  {% if url_beginning == '/blog/' %}
+    <p class="blog-disclaimer">The opinions expressed on this blog are my own and do not necessarily reflect the views of my employer or any affiliated organization.</p>
+  {% endif %}
+
   {% if site.related_blog_posts and site.related_blog_posts.enabled %}
     {% if page.related_posts == null or page.related_posts %}
       {% include related_posts.liquid %}
