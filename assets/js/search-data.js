@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "books-the-godfather",
+        },{id: "post-synthetic-eye-tracking-teaching-nlp-models-how-people-read",
+        
+          title: "Synthetic eye tracking: teaching NLP models how people read",
+        
+        description: "Real eye-tracking is costly and privacy-sensitive. Synthetic scanpaths can still carry useful reading structure when the limits of the proxy are kept explicit.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/synthetic-eye-tracking-nlp/";
+          
+        },
+      },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
