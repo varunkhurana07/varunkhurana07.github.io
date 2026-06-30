@@ -33,7 +33,7 @@ pagination:
 
 <div class="blog-standfirst">
   <p>I build AI systems that operate in the messy reality of human behavior. Here, I write what does not fit in a paper: the intuition behind a result, the judgment calls, and the experiments that failed before something worked. Slower than a tweet, looser than a paper.</p>
-  <p class="blog-disclaimer"><strong>Note:</strong> <em>The opinions expressed on this blog are my own and do not necessarily reflect the views of my employer or any affiliated organization.</em></p>
+  <p class="blog-disclaimer"><strong>Note:</strong> The opinions expressed on this blog are my own and do not necessarily reflect the views of my employer or any affiliated organization.</p>
 </div>
 
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
