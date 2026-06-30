@@ -191,7 +191,7 @@ keep_files:
 
 # Plug-ins
 plugins:
-  # - jekyll-archives-v2
+  - jekyll-archives-v2
   - jekyll-email-protect
   - jekyll-feed
   # - jekyll-get-json
@@ -253,8 +253,7 @@ terser:
 
 jekyll-archives:
   posts:
-    enabled: false  # Disabled to exclude blog archives from sitemap
-    # enabled: [year, tags, categories]
+    enabled: [year, tags, categories]
     permalinks:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
