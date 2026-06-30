@@ -833,8 +833,8 @@ html[data-theme="dark"] .blog-disclaimer {
 // Blog post reading layout: sticky contents + focused body column
 .blog-post-grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: minmax(10rem, 13rem) minmax(0, 1fr);
+  gap: 1.75rem;
+  grid-template-columns: minmax(9rem, 11rem) minmax(0, 1fr);
   align-items: start;
 }
 
@@ -889,26 +889,29 @@ html[data-theme="dark"] .blog-disclaimer {
 
 // Blog figures should support the story, not dominate it.
 .blog-post-body figure {
-  margin: 1.5rem auto 2rem;
+  margin: 1.35rem auto 1.9rem;
   text-align: center;
 }
 
-.blog-post-body .blog-figure {
+.blog-post-body img.blog-figure {
   display: block;
+  height: auto !important;
   margin: 0 auto;
-  max-width: min(100%, 42rem);
-  width: auto;
+  max-width: 30rem !important;
+  width: min(100%, 66vw, 30rem) !important;
 }
 
-.blog-post-body .blog-figure-small {
-  max-width: min(100%, 34rem);
+.blog-post-body img.blog-figure-small {
+  max-width: 24rem !important;
+  width: min(100%, 56vw, 24rem) !important;
 }
 
 .blog-post-body figure figcaption.caption {
-  font-size: 0.86rem;
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
   line-height: 1.45;
   margin: 0.55rem auto 0;
-  max-width: 42rem;
+  max-width: 34rem;
 }
 
 // Compact references for blog posts.
@@ -919,22 +922,30 @@ html[data-theme="dark"] .blog-disclaimer {
 }
 
 .blog-references .bibliography li {
-  margin-bottom: 1rem;
+  color: var(--global-text-color-light);
+  font-size: 0.84rem;
+  line-height: 1.45;
+  margin-bottom: 0.9rem;
   padding-left: 0.25rem;
 }
 
 .blog-reference-title {
+  color: var(--global-text-color);
   font-weight: 600;
 }
 
 .blog-reference-meta,
 .blog-reference-venue {
-  color: var(--global-text-color);
-  font-size: 0.92rem;
+  color: var(--global-text-color-light);
+  font-size: 0.84rem;
   line-height: 1.45;
 }
 
-@media (max-width: 991px) {
+.blog-reference-venue a {
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
   .blog-post-grid {
     display: block;
   }
@@ -946,6 +957,12 @@ html[data-theme="dark"] .blog-disclaimer {
     max-height: none;
     padding: 0.75rem 0 0.75rem 1rem;
     position: static;
+  }
+
+  .blog-post-body img.blog-figure,
+  .blog-post-body img.blog-figure-small {
+    max-width: 100% !important;
+    width: 100% !important;
   }
 }
 
