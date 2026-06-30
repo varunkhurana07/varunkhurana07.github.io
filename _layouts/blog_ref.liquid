@@ -1,0 +1,24 @@
+---
+---
+<div id="{{ entry.key }}" class="blog-reference-entry">
+  <div class="blog-reference-title">{{ entry.title }}</div>
+  <div class="blog-reference-meta">
+    {% for author in entry.author_array %}
+      {{ author.last }}, {{ author.first }}{% unless forloop.last %}; {% endunless %}
+    {% endfor %}
+    {% if entry.year %}. {{ entry.year }}.{% endif %}
+  </div>
+  <div class="blog-reference-venue">
+    {% if entry.booktitle %}
+      <em>{{ entry.booktitle }}</em>{% if entry.pages %}, pp. {{ entry.pages | replace: '--', '-' }}{% endif %}.
+    {% elsif entry.journal %}
+      <em>{{ entry.journal }}</em>.
+    {% endif %}
+    {% if entry.doi %}
+      DOI: <a href="https://doi.org/{{ entry.doi }}">{{ entry.doi }}</a>.
+    {% endif %}
+    {% if entry.url %}
+      <a href="{{ entry.url }}">link</a>
+    {% endif %}
+  </div>
+</div>

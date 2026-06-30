@@ -14,9 +14,9 @@ toc:
   beginning: true
 ---
 
-<div class="blog-tldr" markdown="1">
-<strong>TL;DR</strong>
+## TL;DR
 
+<div class="blog-tldr" markdown="1">
 - While reading, people linger on some words and skip or revisit others. That trace (a scanpath) carries a usable signal about what matters in the text.
 - Collecting it needs eye-tracking hardware, does not scale easily, and records privacy-sensitive behavior. So the signal mostly stays out of reach.
 - ScanTextGAN generates human-like scanpaths over any text, so a model can use the signal without an eye-tracker {% cite khurana2023synthesizing --file blog --style ieee %}. It improved sentiment, sarcasm, and four GLUE tasks; random noise in its place did not reproduce the gains {% cite khurana2023synthesizing wang2018glue --file blog --style ieee %}.
@@ -33,7 +33,7 @@ The catch is collection. Real scanpaths come from putting people in front of an 
 
 The figure below makes the idea concrete. The circles mark fixations, their size reflects fixation duration, and the arrows show how reading moves across the sentence, including skips and revisits.
 
-{% include figure.liquid path="assets/img/blog/scantextgan-generated-scanpaths.webp" class="img-fluid rounded z-depth-1" alt="Generated reading scanpaths over text examples for sentiment, sarcasm and paraphrase tasks" caption="Generated scanpaths over text examples from sentiment, sarcasm, and paraphrase tasks. Source: Figure 1 in Khurana et al., &quot;Synthesizing Human Gaze Feedback for Improved NLP Performance&quot; (EACL 2023)." %}
+{% include figure.liquid path="assets/img/blog/scantextgan-generated-scanpaths.webp" class="img-fluid rounded z-depth-1 blog-figure" alt="Generated reading scanpaths over text examples for sentiment, sarcasm and paraphrase tasks" caption="Generated scanpaths over text examples from sentiment, sarcasm, and paraphrase tasks. Source: Figure 1 in Khurana et al., &quot;Synthesizing Human Gaze Feedback for Improved NLP Performance&quot; (EACL 2023)." %}
 <!-- Asset provenance: Scanpaths___ACL/images/scanpath_sample_7.pdf -->
 
 ## Model the signal instead of collecting it each time
@@ -50,7 +50,7 @@ Because the approximation preserves part of the reading structure. The model is 
 
 That does not make the generated trace equivalent to a human trace. It does suggest the output is structured enough to test downstream.
 
-{% include figure.liquid path="assets/img/blog/scantextgan-real-vs-synthetic-scanpaths.webp" class="img-fluid rounded z-depth-1" alt="Comparison of real and synthesized reading scanpaths over two text samples" caption="Real and synthesized scanpaths over two text samples. Source: Figure 3 in Khurana et al., &quot;Synthesizing Human Gaze Feedback for Improved NLP Performance&quot; (EACL 2023)." %}
+{% include figure.liquid path="assets/img/blog/scantextgan-real-vs-synthetic-scanpaths.webp" class="img-fluid rounded z-depth-1 blog-figure blog-figure-small" alt="Comparison of real and synthesized reading scanpaths over two text samples" caption="Real and synthesized scanpaths over two text samples. Source: Figure 3 in Khurana et al., &quot;Synthesizing Human Gaze Feedback for Improved NLP Performance&quot; (EACL 2023)." %}
 <!-- Asset provenance: Scanpaths___ACL/images/scanpath_plot_combined_sent_5.png -->
 
 ## Does it actually help?
@@ -92,4 +92,6 @@ The third direction is language generation. If synthetic scanpaths can help clas
 
 ## References
 
-{% bibliography --cited --file blog --style ieee %}
+<div class="blog-references" markdown="1">
+{% bibliography --cited --file blog --style ieee --group_by none --cited_in_order --template blog_ref %}
+</div>

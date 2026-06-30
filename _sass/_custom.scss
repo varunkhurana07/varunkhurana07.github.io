@@ -800,11 +800,24 @@ html[data-theme="dark"] .news-carousel-section {
   background: linear-gradient(135deg, rgba(74, 63, 138, 0.08) 0%, rgba(74, 63, 138, 0.03) 100%);
   border-left: 4px solid var(--global-theme-color);
   border-radius: 8px;
-  margin: 1rem 0 1.75rem;
+  margin: 0.5rem 0 1.75rem;
   padding: 1rem 1.25rem;
 
   p:last-child,
   ul:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.blog-insight {
+  border-left: 4px solid var(--global-theme-color);
+  color: var(--global-text-color);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 1.25rem 0 1.75rem;
+  padding: 0.75rem 0 0.75rem 1.25rem;
+
+  p:last-child {
     margin-bottom: 0;
   }
 }
@@ -815,5 +828,124 @@ html[data-theme="dark"] .blog-tldr {
 
 html[data-theme="dark"] .blog-disclaimer {
   background: linear-gradient(135deg, rgba(155, 142, 196, 0.12) 0%, rgba(155, 142, 196, 0.06) 100%);
+}
+
+// Blog post reading layout: sticky contents + focused body column
+.blog-post-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(10rem, 13rem) minmax(0, 1fr);
+  align-items: start;
+}
+
+.blog-post-toc {
+  border-right: 1px solid rgba(74, 63, 138, 0.14);
+  font-size: 0.9rem;
+  max-height: calc(100vh - 7rem);
+  overflow-y: auto;
+  padding-right: 1rem;
+  position: sticky;
+  top: 5rem;
+
+  h2 {
+    color: var(--global-text-color);
+    font-family: 'Inter', 'Helvetica Neue', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 0 0 0.75rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    line-height: 1.35;
+    margin-bottom: 0.55rem;
+  }
+
+  a {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-hover-color);
+      text-decoration: none;
+    }
+  }
+}
+
+.blog-post-body {
+  min-width: 0;
+}
+
+.blog-post-body > h2:first-child {
+  margin-top: 0;
+}
+
+// Blog figures should support the story, not dominate it.
+.blog-post-body figure {
+  margin: 1.5rem auto 2rem;
+  text-align: center;
+}
+
+.blog-post-body .blog-figure {
+  display: block;
+  margin: 0 auto;
+  max-width: min(100%, 42rem);
+  width: auto;
+}
+
+.blog-post-body .blog-figure-small {
+  max-width: min(100%, 34rem);
+}
+
+.blog-post-body figure figcaption.caption {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  margin: 0.55rem auto 0;
+  max-width: 42rem;
+}
+
+// Compact references for blog posts.
+.blog-references .bibliography {
+  list-style-position: outside;
+  margin-left: 0;
+  padding-left: 1.35rem;
+}
+
+.blog-references .bibliography li {
+  margin-bottom: 1rem;
+  padding-left: 0.25rem;
+}
+
+.blog-reference-title {
+  font-weight: 600;
+}
+
+.blog-reference-meta,
+.blog-reference-venue {
+  color: var(--global-text-color);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 991px) {
+  .blog-post-grid {
+    display: block;
+  }
+
+  .blog-post-toc {
+    border-left: 3px solid var(--global-theme-color);
+    border-right: 0;
+    margin-bottom: 1.75rem;
+    max-height: none;
+    padding: 0.75rem 0 0.75rem 1rem;
+    position: static;
+  }
 }
 

@@ -58,16 +58,32 @@ layout: default
     </p>
   </header>
 
-  <article class="post-content">
+  <article class="post-content{% if url_beginning == '/blog/' and page.toc and page.toc.beginning %} blog-post-content{% endif %}">
     {% if page.toc and page.toc.beginning %}
-      <div id="table-of-contents">
-        {% toc %}
+      {% if url_beginning == '/blog/' %}
+        <div class="blog-post-grid">
+          <aside id="table-of-contents" class="blog-post-toc" aria-label="Contents">
+            <h2>Contents</h2>
+            {% toc %}
+          </aside>
+          <div id="markdown-content" class="blog-post-body">
+            {{ content }}
+          </div>
+        </div>
+      {% else %}
+        <div id="table-of-contents">
+          {% toc %}
+        </div>
+        <hr>
+        <div id="markdown-content">
+          {{ content }}
+        </div>
+      {% endif %}
+    {% else %}
+      <div id="markdown-content">
+        {{ content }}
       </div>
-      <hr>
     {% endif %}
-    <div id="markdown-content">
-      {{ content }}
-    </div>
   </article>
 
   {% if page.citation %}
