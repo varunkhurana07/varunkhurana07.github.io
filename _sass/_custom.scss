@@ -13,6 +13,11 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Playfair Display', 'Georgia', serif;
 }
 
+.post-title .about-name {
+  font-family: inherit;
+  font-weight: 700;
+}
+
 body,
 p,
 li,
@@ -755,10 +760,16 @@ html[data-theme="dark"] .news-carousel-section {
   }
 }
 
-// Blog index standfirst (intro under the title)
+// Blog index header and standfirst
+.blog-index .header-bar {
+  border-bottom: 0;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0;
+}
+
 .blog-standfirst {
   max-width: 42rem;
-  margin: 0.5rem 0 2rem;
+  margin: 0 auto 2rem;
 
   p {
     font-size: 1.05rem;
@@ -770,14 +781,17 @@ html[data-theme="dark"] .news-carousel-section {
 
 // Personal-views disclaimer (blog index + post foot)
 .blog-disclaimer {
+  background: linear-gradient(135deg, rgba(74, 63, 138, 0.08) 0%, rgba(74, 63, 138, 0.03) 100%);
+  border-left: 4px solid var(--global-theme-color);
+  border-radius: 8px;
   font-size: 0.85rem;
-  font-style: italic;
-  color: var(--global-text-color-light);
+  color: var(--global-text-color);
   margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
 }
 
 .blog-standfirst .blog-disclaimer {
-  margin-top: 0.75rem;
+  margin-top: 1rem;
 }
 
 // TL;DR callout for blog posts
@@ -795,5 +809,9 @@ html[data-theme="dark"] .news-carousel-section {
 }
 
 html[data-theme="dark"] .blog-tldr {
+  background: linear-gradient(135deg, rgba(155, 142, 196, 0.12) 0%, rgba(155, 142, 196, 0.06) 100%);
+}
+
+html[data-theme="dark"] .blog-disclaimer {
   background: linear-gradient(135deg, rgba(155, 142, 196, 0.12) 0%, rgba(155, 142, 196, 0.06) 100%);
 }
