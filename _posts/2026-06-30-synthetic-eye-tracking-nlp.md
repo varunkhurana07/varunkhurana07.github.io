@@ -9,7 +9,7 @@ tags: synthetic-data cognitive-signals nlp
 categories: research-notes
 giscus_comments: false
 related_posts: false
-published: false
+published: true
 toc:
   beginning: true
 ---
