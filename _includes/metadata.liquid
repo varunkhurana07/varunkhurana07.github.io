@@ -223,61 +223,93 @@
     {% endcase %}
   {% endfor %}
 
+  {% capture site_base %}{{ site.url }}{{ site.baseurl }}{% endcapture %}
+  {% capture page_full_url %}{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}{% endcapture %}
+  {% capture prof_pic_url %}{{ '/assets/img/prof_pic.jpg' | prepend: site.baseurl | prepend: site.url }}{% endcapture %}
   <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "name": "{{ author_name }}",
-        "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
-        "author":
-        {
-            "@type": "Person",
-            "name": "{{ author_name }}",
-            "url": "{{ site.url }}{{ site.baseurl }}",
-            "jobTitle": "Research Associate",
-            "worksFor":
+        "@graph": [
             {
-                "@type": "Organization",
-                "name": "Adobe"
+                "@type": "Person",
+                "@id": "{{ site_base }}/#person",
+                "name": "{{ author_name }}",
+                "url": "{{ site_base }}/",
+                "image": { "@id": "{{ site_base }}/#personimage" },
+                "jobTitle": "Research Associate",
+                "worksFor": { "@type": "Organization", "name": "Adobe" },
+                "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indraprastha Institute of Information Technology, Delhi (IIIT Delhi)" },
+                {% if sameaslinks != blank %}"sameAs": {{ sameaslinks | jsonify }},{% endif %}
+                "knowsAbout": ["Machine Learning", "Computer Vision", "Natural Language Processing", "Computational Behavioral Science", "Human-Centered AI", "Interpretable Machine Learning"]
             },
-            "alumniOf":
             {
-                "@type": "CollegeOrUniversity",
-                "name": "Indraprastha Institute of Information Technology, Delhi (IIIT Delhi)"
+                "@type": "ImageObject",
+                "@id": "{{ site_base }}/#personimage",
+                "url": "{{ prof_pic_url }}",
+                "contentUrl": "{{ prof_pic_url }}",
+                "width": 1080,
+                "height": 1080,
+                "caption": "{{ author_name }}"
             },
-            {% if sameaslinks != blank %}
-            "sameAs": {{ sameaslinks | jsonify }},
+            {
+                "@type": "WebSite",
+                "@id": "{{ site_base }}/#website",
+                "url": "{{ site_base }}/",
+                "name": "{{ author_name }}",
+                "description": "{{ site.description | strip_newlines | strip }}",
+                "publisher": { "@id": "{{ site_base }}/#person" },
+                "inLanguage": "{{ site.lang | default: 'en' }}"
+            },
+            {% if page.url == '/' %}
+            {
+                "@type": "ProfilePage",
+                "@id": "{{ page_full_url }}#webpage",
+                "url": "{{ page_full_url }}",
+                "name": "{{ author_name }}",
+                "description": "{{ site.description | strip_newlines | strip }}",
+                "isPartOf": { "@id": "{{ site_base }}/#website" },
+                "about": { "@id": "{{ site_base }}/#person" },
+                "mainEntity": { "@id": "{{ site_base }}/#person" },
+                "primaryImageOfPage": { "@id": "{{ site_base }}/#personimage" }
+            }
+            {% elsif is_blog_post %}
+            {
+                "@type": "BlogPosting",
+                "@id": "{{ page_full_url }}#webpage",
+                "url": "{{ page_full_url }}",
+                "headline": "{{ page.title }}",
+                "description": "{% if page.description %}{{ page.description | strip_newlines | strip }}{% endif %}",
+                "isPartOf": { "@id": "{{ site_base }}/#website" },
+                "author": { "@id": "{{ site_base }}/#person" },
+                "publisher": { "@id": "{{ site_base }}/#person" },
+                {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
+                {% if page.og_image or site.og_image %}"image": "{% if page.og_image %}{{ page.og_image | absolute_url }}{% else %}{{ site.og_image | absolute_url }}{% endif %}",{% endif %}
+                "inLanguage": "{{ site.lang | default: 'en' }}"
+            }
+            {% elsif page.url == '/blog/index.html' and site.blog_name and site.blog_name != '' %}
+            {
+                "@type": ["CollectionPage", "Blog"],
+                "@id": "{{ page_full_url }}#webpage",
+                "url": "{{ page_full_url }}",
+                "name": "{{ site.blog_name }}",
+                "description": "{% if page.description %}{{ page.description | strip_newlines | strip }}{% else %}{{ site.blog_description }}{% endif %}",
+                "isPartOf": { "@id": "{{ site_base }}/#website" },
+                "author": { "@id": "{{ site_base }}/#person" },
+                "publisher": { "@id": "{{ site_base }}/#person" },
+                "inLanguage": "{{ site.lang | default: 'en' }}"
+            }
+            {% else %}
+            {
+                "@type": "WebPage",
+                "@id": "{{ page_full_url }}#webpage",
+                "url": "{{ page_full_url }}",
+                "name": "{% if page.title and page.title != 'blank' %}{{ page.title }}{% else %}{{ author_name }}{% endif %}",
+                "description": "{% if page.description %}{{ page.description | strip_newlines | strip }}{% else %}{{ site.description | strip_newlines | strip }}{% endif %}",
+                "isPartOf": { "@id": "{{ site_base }}/#website" },
+                "about": { "@id": "{{ site_base }}/#person" }
+            }
             {% endif %}
-            "knowsAbout": ["Machine Learning", "Computer Vision", "Natural Language Processing", "Computational Behavioral Science", "Human-Centered AI", "Interpretable Machine Learning"]
-        }
+        ]
     }
   </script>
-
-  {% if page.url == '/blog/index.html' and site.blog_name and site.blog_name != '' %}
-    <script type="application/ld+json">
-      {
-          "@context": "https://schema.org",
-          "@type": "Blog",
-          "name": "{{ site.blog_name }}",
-          "url": "{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}",
-          "description": "{% if page.description %}{{ page.description | strip_newlines }}{% else %}{{ site.blog_description }}{% endif %}",
-          "inLanguage": "{{ site.lang | default: 'en' }}",
-          "author":
-          {
-              "@type": "Person",
-              "name": "{{ author_name }}",
-              "url": "{{ site.url }}{{ site.baseurl }}"{% if sameaslinks != blank %},
-              "sameAs": {{ sameaslinks | jsonify }}{% endif %}
-          },
-          "publisher":
-          {
-              "@type": "Person",
-              "name": "{{ author_name }}",
-              "url": "{{ site.url }}{{ site.baseurl }}"
-          }
-      }
-    </script>
-  {% endif %}
 {% endif %}
