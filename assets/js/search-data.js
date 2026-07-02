@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-blog",
           title: "Blog",
-          description: "Notes on machine learning grounded in human behavior.",
+          description: "Minds &amp; Matrices is Varun Khurana&#39;s blog: notes on machine learning grounded in human behavior, from a researcher working at the intersection of AI and human behavior.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
