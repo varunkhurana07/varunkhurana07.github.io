@@ -5,7 +5,7 @@ date: 2026-06-30 09:00:00
 description: Real eye-tracking is costly and privacy-sensitive. Synthetic scanpaths can still carry useful reading structure when the limits of the proxy are kept explicit.
 keywords: eye tracking, synthetic data, scanpaths, NLP, cognitive signals, ScanTextGAN, human gaze feedback
 og_image: /assets/img/blog/scantextgan-real-vs-synthetic-scanpaths.png
-tags: synthetic-data cognitive-signals nlp
+tags: predict behavior synthetic-data cognitive-signals nlp
 categories: research-notes
 giscus_comments: false
 related_posts: false

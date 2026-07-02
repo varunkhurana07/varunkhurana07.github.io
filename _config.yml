@@ -216,10 +216,6 @@ defaults:
     values:
       sitemap: false
   - scope:
-      path: "_posts"
-    values:
-      sitemap: false  # Exclude al-folio template blog posts from sitemap
-  - scope:
       path: "_projects"
     values:
       sitemap: false  # Exclude sample projects from sitemap

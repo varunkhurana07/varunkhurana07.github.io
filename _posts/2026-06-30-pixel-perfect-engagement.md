@@ -3,7 +3,7 @@ layout: post
 title: Why pixel-perfect AI images fail to drive engagement
 date: 2026-06-30 10:00:00
 description: The prettiest image is rarely the one people act on, and that gap is a measurement problem, not a taste problem.
-tags: engagement evaluation generative-ai
+tags: optimize behavior engagement evaluation generative-ai
 categories: research-notes
 giscus_comments: false
 related_posts: false

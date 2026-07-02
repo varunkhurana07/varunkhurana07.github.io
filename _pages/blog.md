@@ -2,10 +2,9 @@
 layout: default
 permalink: /blog/
 title: Blog
-description: Notes on machine learning grounded in human behavior.
+description: "Minds & Matrices is Varun Khurana's blog: notes on machine learning grounded in human behavior, from a researcher working at the intersection of AI and human behavior."
 nav: true
 nav_order: 4
-sitemap: false
 pagination:
   enabled: true
   collection: posts

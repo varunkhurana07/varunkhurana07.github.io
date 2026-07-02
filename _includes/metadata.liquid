@@ -27,7 +27,7 @@
     {% capture title %}{{ site.title }}{% endcapture %}
   {% endif %}
   {% if page.url == '/blog/index.html' %}
-    {{ page.title }} | {{ title }}
+    {% if site.blog_name and site.blog_name != '' %}{{ site.blog_name }}{% else %}{{ page.title }}{% endif %} | {{ title }}
   {% elsif page.title != 'blank' and page.url != '/' %}
     {% if page.title == null or page.title == '' %}
       {{ page.date | date: '%Y' }} | {{ title }}
@@ -55,7 +55,7 @@
   <!-- OpenGraph -->
   <meta property="og:site_name" content="{{ title }}">
   <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta property="og:title" content="{% if page.url == '/blog/index.html' and site.blog_name and site.blog_name != '' %}{{ site.blog_name }} | {{ title }}{% elsif page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   {% if page.og_image or site.og_image %}
@@ -254,4 +254,30 @@
         }
     }
   </script>
+
+  {% if page.url == '/blog/index.html' and site.blog_name and site.blog_name != '' %}
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "name": "{{ site.blog_name }}",
+          "url": "{{ '/blog/' | prepend: site.baseurl | prepend: site.url }}",
+          "description": "{% if page.description %}{{ page.description | strip_newlines }}{% else %}{{ site.blog_description }}{% endif %}",
+          "inLanguage": "{{ site.lang | default: 'en' }}",
+          "author":
+          {
+              "@type": "Person",
+              "name": "{{ author_name }}",
+              "url": "{{ site.url }}{{ site.baseurl }}"{% if sameaslinks != blank %},
+              "sameAs": {{ sameaslinks | jsonify }}{% endif %}
+          },
+          "publisher":
+          {
+              "@type": "Person",
+              "name": "{{ author_name }}",
+              "url": "{{ site.url }}{{ site.baseurl }}"
+          }
+      }
+    </script>
+  {% endif %}
 {% endif %}
