@@ -237,10 +237,13 @@
                 "url": "{{ site_base }}/",
                 "image": { "@id": "{{ site_base }}/#personimage" },
                 "jobTitle": "Research Associate",
-                "worksFor": { "@type": "Organization", "name": "Adobe" },
-                "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indraprastha Institute of Information Technology, Delhi (IIIT Delhi)" },
+                "worksFor": { "@type": "Organization", "name": "Adobe", "url": "https://www.adobe.com/" },
+                "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indraprastha Institute of Information Technology, Delhi", "alternateName": "IIIT Delhi", "url": "https://iiitd.ac.in/" },
+                "address": { "@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "India" },
+                "description": "{{ site.description | strip_newlines | strip }}",
+                "disambiguatingDescription": "ML Research Associate at Adobe MDSR Lab and IIIT Delhi alumnus, working on human behavior modeling in AI",
                 {% if sameaslinks != blank %}"sameAs": {{ sameaslinks | jsonify }},{% endif %}
-                "knowsAbout": ["Machine Learning", "Computer Vision", "Natural Language Processing", "Computational Behavioral Science", "Human-Centered AI", "Interpretable Machine Learning"]
+                "knowsAbout": ["Machine Learning", "Computer Vision", "Natural Language Processing", "Computational Behavioral Science", "Multimodal Learning", "Human Behavior Modeling", "Human-Centered AI", "Interpretable Machine Learning"]
             },
             {
                 "@type": "ImageObject",
